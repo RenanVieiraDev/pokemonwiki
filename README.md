@@ -17,4 +17,4 @@ para o link `http://localhost:4200/`, o Angular fornece um automatico reload
 caso aja modificação e salvamento de alterações.
 
 # Telas
-![Alt text](https://drive.google.com/file/d/1Mi5Io_XMwt7cCEt7L3DMH0_oyEz8t6pL/view?usp=sharing)
+![Alt text](https://firebasestorage.googleapis.com/v0/b/meudrive-e6747.appspot.com/o/Captura%20de%20tela%20de%202021-08-05%2017-26-50.png?alt=media&token=e593440f-63cb-4431-93b7-24c4b01273cc)
