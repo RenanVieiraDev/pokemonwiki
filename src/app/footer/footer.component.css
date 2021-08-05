@@ -1,0 +1,10 @@
+.navbar{
+    background-image: linear-gradient(to right, #6d0074 , #9b1480);
+}
+.row{
+    width: 100%;
+}
+.iconSocialMidia{
+    width: 30px;
+    height: 30px;
+}

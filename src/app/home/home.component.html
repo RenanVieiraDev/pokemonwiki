@@ -1,0 +1,51 @@
+<div class="row" *ngIf="searchActive === false">
+    <div class="col-md-6 col-lg-4 col-12 ml-1 mr-1 mb-3 text-center ml-auto mr-auto" *ngFor="let game of listVersionsGameDetails">
+        <div class="card ml-auto mr-auto" style="width: 18rem;">
+            <img class="card-img-top" src="../../assets/imagens/home/capasGames/{{game['version_groups'][0].name}}.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h5 class="card-title m-0" *ngIf="game['version_groups']">{{game['version_groups'][0].name}}</h5>
+              <p class="m-0 p-0">
+               <small class="text50Black">Região {{game.main_region.name}}</small>
+              </p>
+            </div>
+            <ul class="list-group list-group-flush bgDark10Black">
+              <li class="list-group-item bgDark10Black">{{game['name']}}</li>
+              <li class="list-group-item bgDark10Black">
+                Total de Pokémons {{game.pokemon_species.length}}
+              </li>
+              <li class="list-group-item bgDark10Black">Existem {{game.types.length}} tipos de pokémons</li>
+              <li class="list-group-item bgDark10Black">Existem {{game.moves.length}} tipos de movimentos</li>
+              
+            </ul>
+            <div class="card-body bg-info">
+              <a class="card-link text-white" (click)="showListPokemon(game)">Ver lista de Pokémons...</a>
+            </div>
+          </div>
+    </div>
+</div>
+
+<div class="row" *ngIf="searchActive">
+  <div class="col-lg-4 col-12 ml-1 mr-1 mb-3 text-center ml-auto mr-auto" *ngFor="let game of searchGameGeneration">
+    <div class="card ml-auto mr-auto" style="width: 18rem;">
+        <img class="card-img-top" src="../../assets/imagens/home/capasGames/{{game['version_groups'][0].name}}.jpg" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title m-0" *ngIf="game['version_groups']">{{game['version_groups'][0].name}}</h5>
+          <p class="m-0 p-0">
+           <small class="text50Black">Região {{game.main_region.name}}</small>
+          </p>
+        </div>
+        <ul class="list-group list-group-flush bgDark10Black">
+          <li class="list-group-item bgDark10Black">{{game['name']}}</li>
+          <li class="list-group-item bgDark10Black">
+            Total de Pokémons {{game.pokemon_species.length}}
+          </li>
+          <li class="list-group-item bgDark10Black">Existem {{game.types.length}} tipos de pokémons</li>
+          <li class="list-group-item bgDark10Black">Existem {{game.moves.length}} tipos de movimentos</li>
+          
+        </ul>
+        <div class="card-body bg-info">
+          <a class="card-link text-white" (click)="showListPokemon(game)">Ver lista de Pokémons...</a>
+        </div>
+      </div>
+  </div>
+</div>

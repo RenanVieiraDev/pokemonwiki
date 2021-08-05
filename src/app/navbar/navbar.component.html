@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand text-white" href="#">
+      <img src="./assets/imagens/home/bolPokerNavbar.png" class="iconNavBrad">
+      <span class="textNavBrad ml-2">PokémonWiki</span>
+    </a>
+    <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>-->
+    <div class="d-lg-none d-sm-block">
+      <div>
+        <select class="form-control form-control-sm" id="exampleFormControlSelect1" #searchSelectGameSm (change)="searchGame('sm')">
+          <option disabled>-Escolha a geração-</option>
+          <option selected value="0">Todas</option>
+          <option *ngFor="let generation of listOptionsGenerationsGame" value="{{generation['name']}}">{{generation['name']}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse row" id="navbarNav">
+      <div class="col-3 ml-auto">
+        <select class="form-control form-control-sm" id="exampleFormControlSelect1" #searchSelectGameLg (change)="searchGame('lg')">
+          <option disabled>-Escolha a geração-</option>
+          <option selected value="0">Todas</option>
+          <option *ngFor="let generation of listOptionsGenerationsGame" value="{{generation['name']}}">{{generation['name']}}</option>
+        </select>
+      </div>
+    </div>
+  </nav>

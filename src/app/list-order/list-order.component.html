@@ -1,0 +1,6 @@
+<div class="row text-center pl-2 pr-2 m-0">
+      <div *ngFor="let pokemon of listPokemons" class="col-5 col-sm-4 col-md-2 cardPoker mb-3 ml-auto mr-auto">
+          <img src="{{pokemon.sprites.front_default}}" alt="{{pokemon.name}}">
+          <h5>{{pokemon.name}}</h5>
+      </div>    
+</div>

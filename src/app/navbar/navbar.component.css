@@ -1,0 +1,10 @@
+.navbar{
+    background-image: linear-gradient(to right, #6d0074 , #9b1480);
+}
+.iconNavBrad{
+    width: 25px;
+    height: 25px;
+}
+.textNavBrad{
+    font-family: 'Lobster', cursive;
+}
